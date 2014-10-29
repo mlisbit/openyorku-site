@@ -1,0 +1,194 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Open YorkU API .1 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="about.html"/>
+    <link rel="top" title="Open YorkU API .1 documentation" href="index.html"/>
+        <link rel="prev" title="About" href="about.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> Open YorkU API</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#why-is-this-being-built">Why is this being built?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#current-limitations">Current limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#future-improvements">Future improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#universities-with-api-s-of-their-own">Universities with API&#8217;s of their own</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#possible-app-ideas">Possible app ideas</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Open YorkU API</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/examples.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Because this API is still under active development, don&#8217;t expect anything to work. It&#8217;s also hosted on a free instance of Heroku, so results will be slow. Or I went over my quota, and can&#8217;t pay for it.</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/courses">api.openyorku.com/courses</a> to get a list of all the courses york has to offer.</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/courses?limit=5&amp;fields=title&amp;q=science">api.openyorku.com/courses?limit=5&amp;fields=title&amp;q=science</a> get only the titles of 5 courses with &#8216;science&#8217; in it.</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/courses/ADMS1000">api.openyorku.com/courses/#course_code#</a> look a little closer at the course.</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/courses?credit_count=3,6&amp;year_level=3&amp;course_subject=EECS">api.openyorku.com/courses?credit_count=3,6&amp;year_level=3&amp;course_subject=EECS</a> get all the 3rd year computer science programs with a credit count of 3 or 6.</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/subjects">api.openyorku.com/subjects</a> get a list of all the subjects, and their respective courses</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/places/restaurants">api.openyorku.com/places/restaurants</a> get a list of all the restaurants at York, their open/close times, gps co-ordinates, and types of food served.</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/places/restaurants?tags=coffee&amp;now_open=1">api.openyorku.com/places/restaurants?tags=coffee&amp;now_open=1</a> get all the open coffee shops</li>
+<li>{GET} <a class="reference external" href="http://api.openyorku.com/places/buildings">api.openyorku.com/places/buildings</a> get a list of all buildings, including all Points of Interests within them, gps co-ordinates, and building cover polygon for google maps.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="about.html" class="btn btn-neutral" title="About"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Maciej Lis.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
